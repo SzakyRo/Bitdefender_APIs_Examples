@@ -10,6 +10,7 @@ encodedBytes = base64.b64encode(loginString.encode())
 encodedUserPassSequence = str(encodedBytes, 'utf-8')
 authorizationHeader = "Basic " + encodedUserPassSequence
 
+#Change the URL according to your server.
 apiEndpoint_Url = "https://cloudgz.gravityzone.bitdefender.com/api/v1.0/jsonrpc/packages"
 
 request = {
